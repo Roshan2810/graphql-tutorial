@@ -7,7 +7,7 @@ const resolvers = {
         },
         user: (_, args) => {
             const { id } = args;
-            return UserList.filter(el => el.id == id)[0]
+            return UserList.filter(el => el.id === Number(id))[0]
         }
     }
 }
