@@ -63,6 +63,70 @@ const UserList = [
     }
 ];
 
+const MovieList = [
+    {
+      id: 1,
+      name: "Neo Ned",
+      yearOfRelease: 2011,
+      isInTheater: true
+    },
+    {
+      id: 2,
+      name: "Season of the Witch",
+      yearOfRelease: 2004,
+      isInTheater: true
+    },
+    {
+      id: 3,
+      name: "Zatoichi Goes to the Fire Festival (Zatôichi abare-himatsuri) (Zatôichi 21)",
+      yearOfRelease: 2011,
+      isInTheater: true
+    },
+    {
+      id: 4,
+      name: "Only God Knows (Sólo Dios Sabe)",
+      yearOfRelease: 1997,
+      isInTheater: true
+    },
+    {
+      id: 5,
+      name: "Four Nights of a Dreamer (Quatre nuits d'un rêveur)",
+      yearOfRelease: 1991,
+      isInTheater: true
+    },
+    {
+      id: 6,
+      name: "Butterfly (La lengua de las mariposas)",
+      yearOfRelease: 2011,
+      isInTheater: true
+    },
+    {
+      id: 7,
+      name: "Conquest",
+      yearOfRelease: 2008,
+      isInTheater: true
+    },
+    {
+      id: 8,
+      name: "Dances Sacred and Profane",
+      yearOfRelease: 2005,
+      isInTheater: true
+    },
+    {
+      id: 9,
+      name: "Young Unknowns, The",
+      yearOfRelease: 1998,
+      isInTheater: false
+    },
+    {
+      id: 10,
+      name: "Little Men",
+      yearOfRelease: 1990,
+      isInTheater: false
+    }
+  ]
+
 module.exports = {
-    UserList
+    UserList,
+    MovieList
 }
