@@ -17,6 +17,16 @@ const resolvers = {
             return MovieList.filter(el => el.name.includes(name))[0];
         }
     },
+
+    Mutation: {
+        createUser: (parent, args) => {
+            const { input } = args;
+            const lastId = UserList[UserList.length - 1].id;
+            input.id = lastId + 1;
+            UserList.push(input)
+            return input;
+        }
+    },
     User: {
         favouriteMovies: () => {
             return MovieList.filter(el => el.yearOfRelease >= 2000 && el.yearOfRelease <= 2010)

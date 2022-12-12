@@ -19,11 +19,22 @@ const typeDefs = gql`
         isInTheater: Boolean!
     }
 
+    input CreateUserInput {
+        name: String!
+        username: String!
+        age: Int!
+        country: Nationality = INDIA
+    }
+
     type Query {
         users: [User!]!
         user(id: ID!): User!
         movies: [Movie!]!
         movie(name: String!): Movie!
+    }
+
+    type Mutation {
+        createUser(input: CreateUserInput!): User!
     }
 
     enum Nationality {
