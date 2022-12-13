@@ -4,7 +4,9 @@ const { resolvers } = require('./schema/resolvers');
 
 // initializing the ApolloServer
 const server = new ApolloServer({
-    typeDefs, resolvers
+    typeDefs, resolvers, context: () => {
+        return { name: 'Roshan Shah' }
+    }
 })
 
 //default port configured in apollo-server is 4000
